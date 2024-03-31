@@ -1,0 +1,80 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 500px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .result-area {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 20px;
+  }
+  
+  .result-area img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .betting-area {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 20px;
+  }
+  
+  .betting-area img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .info-area {
+    padding: 10px 20px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .info-area .total-bet,
+  .info-area .result-message {
+    font-size: 16px;
+  }
+  
+  .btn-spin,
+  .btn-reset {
+    margin: 10px 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-spin:hover,
+  .btn-reset:hover {
+    background-color: #ccc;
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+  
+  .result-message {
+    color: red;
+  }
+  
+  .disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
